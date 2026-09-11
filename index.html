@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>竹中庵 | Takenakaan</title>
+  <meta name="description" content="茨城県古河市の蕎麦処「竹中庵」公式サイトです。">
+  <style>
+    :root {
+      --bg: #f6f1e8;
+      --ink: #2b2a26;
+      --muted: #5c584f;
+      --line: #d7cfc2;
+      --accent: #3f5a45;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: "Hiragino Mincho ProN", "Yu Mincho", "YuMincho", serif;
+      color: var(--ink);
+      background: var(--bg);
+      display: flex;
+      flex-direction: column;
+    }
+
+    header, main, footer {
+      width: min(720px, calc(100% - 2.5rem));
+      margin: 0 auto;
+    }
+
+    header {
+      padding: 4.5rem 0 2rem;
+      text-align: center;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .eyebrow {
+      letter-spacing: 0.42em;
+      font-size: 0.72rem;
+      color: var(--accent);
+      margin: 0 0 1rem;
+    }
+
+    h1 {
+      font-weight: 500;
+      font-size: clamp(2.4rem, 6vw, 3.4rem);
+      letter-spacing: 0.28em;
+      margin: 0 0 0.75rem 0.28em;
+    }
+
+    .english {
+      margin: 0;
+      font-family: "Palatino Linotype", Palatino, "Times New Roman", serif;
+      letter-spacing: 0.18em;
+      color: var(--muted);
+    }
+
+    main {
+      flex: 1;
+      padding: 2.75rem 0 3.5rem;
+      line-height: 1.9;
+    }
+
+    p { margin: 0 0 1.25rem; }
+
+    .info {
+      margin-top: 2.25rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--line);
+      font-size: 0.98rem;
+    }
+
+    .info dt {
+      color: var(--accent);
+      letter-spacing: 0.16em;
+      font-size: 0.78rem;
+      margin: 1rem 0 0.2rem;
+    }
+
+    .info dd { margin: 0; }
+
+    a { color: var(--accent); }
+
+    footer {
+      padding: 1.25rem 0 2.5rem;
+      border-top: 1px solid var(--line);
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+      font-size: 0.88rem;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <p class="eyebrow">SOBA / KOGA</p>
+    <h1>竹中庵</h1>
+    <p class="english">Takenakaan</p>
+  </header>
+  <main>
+    <p>茨城県古河市にある蕎麦処「竹中庵」の公式サイトです。</p>
+    <p>古民家の空間で、手打ち蕎麦と定食をお楽しみいただけます。営業時間などの最新情報は、お電話にてご確認ください。</p>
+    <dl class="info">
+      <dt>住所</dt>
+      <dd>〒306-0225 茨城県古河市磯部1111-1</dd>
+      <dt>電話</dt>
+      <dd><a href="tel:0280925441">0280-92-5441</a></dd>
+    </dl>
+  </main>
+  <footer>
+    <span>&copy; Takenakaan</span>
+    <a href="./privacy/">プライバシーポリシー</a>
+  </footer>
+</body>
+</html>
